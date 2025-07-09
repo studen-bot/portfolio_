@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
-    background-color: rgb(2, 2, 57);
-    /* background:linear-gradient(#38A2D7,#561139); */
+    background: repeating-radial-gradient(#030A1C, #051024, #061831);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -15,7 +19,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgb(4, 4, 94);
+    background-color: rgb(9, 9, 59);
+    width: 100%;
 }
 
 nav ul {
@@ -35,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    font-size: 1.04rem;
+    font-style:oblique;
     color: whitesmoke;
 }
 
@@ -104,11 +109,11 @@ main hr {
 }
 
 .purple {
-    color: rgb(129, 81, 173);
+    color: rgb(202, 136, 241);
 }
 
 #element {
-    color: rgb(129, 81, 173);
+    color: rgb(145, 206, 235);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -133,7 +138,7 @@ main hr {
 }
 
 .slide1 {
-    animation: texts 0.3s ease-in-out forwards;
+    animation: texts 0.5s ease-in-out forwards;
 }
 
 @keyframes texts {
@@ -165,7 +170,7 @@ main hr {
 .second h1 {
     padding: 20px 50px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: rgb(11, 44, 104);
     border-radius: 19px;
 }
 
@@ -177,8 +182,9 @@ main hr {
 
 .box1 {
     padding: 15px;
-    border: 5px solid rgb(71, 71, 105);
-    border-radius: 10px;
+    border: 2px solid rgb(71, 71, 105);
+    padding-right: 2px;
+    border-radius: 8px 0;
     position: relative;
     top: 10px;
     left: 100px;
@@ -187,8 +193,8 @@ main hr {
 
 .box2 {
     padding: 15px;
-    border: 5px solid rgb(71, 71, 105);
-    border-radius: 10px;
+    border-radius: 8px 0;
+    border: 2px solid rgb(71, 71, 105);
     position: relative;
     top: 200px;
     left: 200px;
@@ -197,8 +203,8 @@ main hr {
 
 .box3 {
     padding: 15px;
-    border: 5px solid rgb(71, 71, 105);
-    border-radius: 10px;
+    border: 2px solid rgb(71, 71, 105);
+    border-radius: 8px 0;
     position: relative;
     top: 380px;
     left: 300px;
@@ -244,7 +250,7 @@ main hr {
 .third h1 {
     padding: 20px 50px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: rgb(11, 44, 104);
     border-radius: 19px;
 }
 
@@ -276,11 +282,34 @@ main hr {
 
 .container {
     border-radius: 15px;
-    margin: 155px 550px;
-    /* background-color: #1a2754; */
+    margin: 135px 550px;
     box-shadow: 1px 1px 15px white;
     background-color: rgb(2, 2, 57);
     padding: 30px 0 30px 0;
+}
+
+.container hr {
+    margin: 15px 30px;
+}
+
+.icons {
+    font-size: 2rem;
+    margin-left: 145px;
+    margin-top: 5px;
+}
+
+.icons .fa-facebook {
+    color: #1877F2;
+}
+
+.icons .fa-square-instagram {
+    background: linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    border-radius:5px;
+    margin:0 2px;
+}
+
+.icons .fa-linkedin {
+    color: #0077B5;
 }
 
 .form .btn {
@@ -293,31 +322,23 @@ main hr {
     color: rgb(14, 14, 14);
 }
 
-.container hr {
-    margin: 15px 30px;
-}
-
 .fourth {
     height: 100vh;
-    /* background-image:url("img1.png");
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center; */
 }
 
 .fourth h1 {
     padding: 20px 50px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: rgb(11, 44, 104);
     border-radius: 19px;
 }
+
 .skill {
     box-shadow: 1px 1px 15px white;
-    background-color: rgb(2, 2, 57);
     border-radius: 15px;
     margin: 131px 550px 0 550px;
-    /* background:linear-gradient(rgb(212, 212, 213),rgb(131, 119, 119)); */
     padding: 30px 0 30px 0;
+    background: repeating-radial-gradient(#000B18, #00172D, #00264D, #000B18);
 }
 
 .skill p {
@@ -415,65 +436,80 @@ main hr {
     left: 277px;
     bottom: 4px;
 }
-.soft-skills{
-    height:120px;
-    background-color:rgb(2, 2, 57);
+
+.soft-skills {
+    height: 120px;
     margin: 5px 550px 0 550px;
-    border-radius:15px;
+    border-radius: 15px;
     box-shadow: 1px 1px 15px white;
-    padding:10px 20px;
+    padding: 10px 20px;
+    background: repeating-conic-gradient(#000B18, #00172D, #00264D, #000B18);
 }
-.soft-skills li{
-    margin:15px; 
-    font-size:13.4px;
-    font-family:Arial, Helvetica, sans-serif;
+
+.soft-skills li {
+    margin: 15px;
+    font-size: 13.4px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.soft-skills p{
-    text-align:center;
-    position:relative;
-    top:5px;
+
+.soft-skills p {
+    text-align: center;
+    position: relative;
+    top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .soft-skills hr {
     margin: 15px 30px;
 }
-.fifth{
-    height:100vh;
+
+.fifth {
+    height: 100vh;
 }
+
 .fifth h1 {
     padding: 20px 50px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: rgb(11, 44, 104);
     border-radius: 19px;
 }
-.fifth .info{
-    display:flex;
+
+.fifth .info {
+    display: flex;
 }
-.info .left-text{
-    margin:30px;
-    height:70vh;
-    width:50vw;
-    border:2px solid black;
-    border-radius:67px;
-    background:linear-gradient(whitesmoke,rgb(241, 211, 211));
-    color:#1d1779
+
+.info .left-text {
+    margin: 30px;
+    height: 70vh;
+    width: 50vw;
+    border: 2px solid rgb(156, 151, 151);
+    filter: drop-shadow(1px 1px 20px white);
+    border-radius: 67px;
+    background: linear-gradient(#000B18, #00172D, #00264D, #02386E, #00498D, #0052A2, #000B18);
+    color: #ffffff
 }
-.info .left-text p{
-    margin:105px 60px 60px 60px;
-    text-align:center;
+
+.info .left-text p {
+    margin: 105px 60px 0 60px;
+    text-align: center;
+    font-size: 1rem;
 }
-.info .right-img{
-    margin:30px;
-    height:70vh;
-    width:50vw;
+
+.info .right-img {
+    margin: 30px;
+    height: 70vh;
+    width: 50vw;
 }
-.info .right-img img{
-    width:90%;
-    margin-left:77px;
-    margin-bottom:10px;
+
+.info .right-img img {
+    width: 90%;
+    margin-left: 77px;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #1d1779;
+    background-color: rgb(9, 9, 59);
+    position: sticky;
 }
 
 footer .footer-rights {
@@ -481,4 +517,631 @@ footer .footer-rights {
     color: white;
     font-size: 12px;
     padding: 12px 0;
+}
+
+@media (max-width:1450px) {
+    .first {
+        height: 100vh;
+    }
+
+    .second {
+        height: 100vh;
+    }
+
+    .third {
+        height: 100vh;
+    }
+
+    .fourth {
+        height: 100vh;
+    }
+
+    .fifth {
+        height: 100vh;
+    }
+
+
+    .info .left-text p {
+        margin: 30px;
+    }
+
+    .skill {
+        margin: 30px 100px 30px 30px;
+    }
+
+    .soft-skills {
+        margin: 30px 100px 30px 30px;
+    }
+
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+
+    .box1 {
+        margin: 0 10px 0 40px;
+        position: relative;
+        padding: 7px;
+        left: 5%;
+        top: 34px;
+        height: 38vh;
+    }
+
+    .box2 {
+        margin: 0 50px;
+        position: relative;
+        padding: 5px 2px 2px 1px;
+        top: 34px;
+        left: 3%;
+        height: 39vh;
+    }
+
+    .box3 {
+        margin: 0 12px;
+        position: relative;
+        padding: 6px;
+        top: 34px;
+        left: 0;
+        height: 38vh;
+    }
+
+    .t3-desc {
+        margin-left: 5px;
+    }
+
+    .container {
+        position: absolute;
+        width: 50%;
+        margin: 0;
+        left: 350px;
+    }
+    .icons{
+        display:none;
+    }}
+
+@media (max-width:1000px) {
+    hr{
+        visibility:hidden;
+    }
+
+    .skill {
+        margin: 100px 0 0 75px;
+        width: 78vw;
+    }
+
+    .soft-skills {
+        margin: 10% 15% 10% 8%;
+    }
+
+    .container {
+        margin-left:-10%;
+    }
+    .icons{
+        display:none;
+    }
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .box1 {
+        margin: 0 10px 0 40px;
+        position: relative;
+        padding: 7px;
+        left: 0;
+        top: 34px;
+        height: 35vh;
+    }
+
+    .box2 {
+        margin: 0 50px;
+        position: relative;
+        padding: 5px 2px 2px 1px;
+        top: 237px;
+        left: 0;
+        height: 32vh;
+    }
+
+    .box3 {
+        margin: 0 12px;
+        position: relative;
+        padding: 7px;
+        top: 395px;
+        left: 0;
+        height: 35vh;
+    }
+
+    .t1-desc,
+    .t2-desc,
+    .t3-desc {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:800px) {
+    .nav2 li {
+        font-size: 0.75rem;
+    }
+
+    .nav2 li a:hover {
+        font-size: 0.8rem;
+    }
+
+    .info .left-text p {
+        font-size: 0.8rem;
+        margin: 28px 30px 90px 30px;
+    }
+
+    .skill {
+        margin: 100px 0 0 75px;
+        width: 78vw;
+    }
+
+    .soft-skills {
+        margin: 5% 15% 0 14%;
+    }
+
+    .container {
+
+        position: absolute;
+        width: 40vw;
+
+    }
+    .form{
+        display:flex;
+    }
+    .form input {
+        width: 90%;
+    }
+    
+    .form .btn {
+        width: 45%;
+    }
+    .icons{
+        display:none;
+    }
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .box1 {
+        margin: 0 10px;
+        position: relative;
+        padding: 7px;
+        top: 34px;
+        left: 0;
+        height: 35vh;
+    }
+
+    .box2 {
+        margin: 0 10px;
+        position: relative;
+        padding: 5px 2px 2px 1px;
+        top: 220px;
+        left: 0;
+        height: 32vh;
+    }
+
+    .box3 {
+        margin: 0 12px;
+        position: relative;
+        padding: 7px;
+        top: 360px;
+        left: 0;
+        height: 35vh;
+    }
+
+    .t1-desc,
+    .t2-desc,
+    .t3-desc {
+        font-size: 0.6rem;
+    }
+
+    .t2-desc {
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width:570px) {
+    .nav1 {
+        font-size: 0.85rem;
+        padding: 0;
+        margin-left: 2px;
+    }
+
+    .nav2 li {
+        font-size: 0.65rem;
+        margin: 3px;
+    }
+
+    nav ul li a:hover {
+        font-size: 0.6rem;
+        color: whitesmoke;
+    }
+
+    .leftSection .btn {
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    .leftSection .intro-x,
+    .passion,
+    .purple,
+    #element {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .info .left-text {
+        width: 100vw;
+        height: 50vh;
+        margin-left: 50px;
+        margin-right: 0px;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .info .left-text p {
+        font-size: 0.65rem;
+        position: relative;
+        bottom: 62px;
+        margin: 80px 5px 0 5px;
+    }
+
+
+    .info .right-img img {
+        height: 32vh;
+        position: absolute;
+        right: 19px;
+        top: 400px;
+        width: 67vw;
+    }
+
+    .leftSection {
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        height: 50vh;
+        border: 2px solid rgb(2, 2, 57);
+        padding: 40px 32px 60px 12px;
+    }
+
+    .leftSection .buttons {
+        padding-top: 10px;
+        display: flex;
+    }
+
+    .buttons .btn {
+        padding: 3px;
+        font-size: 0.9rem;
+        margin-right: 8px;
+    }
+
+    .rightSection img {
+        width: 35vw;
+        height: 40vh;
+        position: absolute;
+        bottom: 130px;
+        right: 30px;
+        margin-bottom: 0;
+    }
+
+    .leftSection .intro-x {
+        font-size: 1.5rem;
+    }
+
+    .passion {
+        font-size: 1.3rem;
+    }
+
+    .purple {
+        font-size: 2rem;
+    }
+
+    #element {
+        font-size: 2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    .skill {
+        height: 27vh;
+        margin: 56px 40px 0 40px;
+        padding-bottom: 10px;
+    }
+
+    .skill hr {
+        display: none;
+    }
+
+    .skill-section {
+        width: 80%;
+    }
+
+    .skill-section .skill-amounthtml {
+        width: 40vw;
+
+    }
+
+    .skill-section .skill-amountcss {
+        width: 40vw;
+    }
+
+    .skill-section .skill-amountjs {
+        width: 40vw;
+    }
+
+    .skill-section .skill-amount1 {
+        background: rgb(24, 2, 88);
+    }
+
+    .skill-section span {
+        position: sticky;
+        right: 1000px;
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .soft-skills {
+        margin: 17px 80px 25px 40px;
+    }
+
+    .box {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .box1 {
+        margin: 0 10px;
+        position: relative;
+        padding: 7px;
+        top: 34px;
+        left: 0;
+        height: 35vh;
+    }
+
+    .box2 {
+        margin: 0 10px;
+        position: relative;
+        padding: 5px 4px 0 1px;
+        top: 237px;
+        left: 0;
+        height: 32vh;
+    }
+
+    .box3 {
+        margin: 0 12px;
+        position: relative;
+        padding: 7px;
+        top: 395px;
+        left: 0;
+        height: 35vh;
+    }
+
+    .topic1,
+    .topic2,
+    .topic3 {
+        color: crimson;
+        padding: 5px;
+        font-size: 10px;
+        text-align: center;
+
+    }
+
+    .t1-desc,
+    .t2-desc,
+    .t3-desc {
+        font-size: 10px;
+        width: 100%;
+        position: relative;
+        left: 5px;
+    }
+
+    .container {
+        position: absolute;
+        width: 50vw;
+        left: 185px;
+    }
+    .icons{
+        display:none;
+    }
+    .form input {
+        display: block;
+        width: 94%;
+        border-radius: 6px;
+        margin-bottom: 5px;
+        padding: 4px;
+    }
+
+    .form .btn {
+        position: relative;
+        right: 51px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .p1 {
+        font-size: 13px;
+    }
+
+    footer .footer-rights {
+        position: relative;
+        bottom: 0;
+    }
+
+}
+
+@media(max-width:480px) {
+    .left-section {
+        padding: 0;
+    }
+
+    .rightSection img {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 60%;
+        margin: 0;
+        position: absolute;
+        left: 20%;
+    }
+
+    .form .p1 {
+        margin-left: 15%;
+    }
+
+    .form input {
+        display: block;
+        width: 67%;
+        border-radius: 6px;
+        margin-bottom: 5px;
+        margin-left: 14%;
+        padding: 4px;
+    }
+
+    .soft-skills {
+        margin-right: 11%;
+    }
+    .icons{
+        display:none;
+    }
+    .info .left-text {
+        height: 60vh;
+    }
+
+}
+
+@media (max-width:360px) {
+    .skill {
+        width: 78vw;
+    }
+
+    .skill-name {
+        margin-left: 5%;
+    }
+
+    .info .left-text p {
+        font-size: 0.5rem;
+    }
+
+    .form .p1 {
+        margin-left: 22%;
+    }
+
+    .form .p2 {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        margin: 1px;
+    }
+    .icons{
+        display:none;
+    }
+}
+
+@media(max-width:290px) {
+    .rightSection img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav1 {
+        align-items: center;
+    }
+
+    .nav2 li {
+        font-size: 0.6rem;
+    }
+
+
+    .skill-name {
+        margin-left: 0;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .box1 {
+        position: relative;
+        left: -15%;
+    }
+
+    .box2 {
+        position: relative;
+        left: -15%;
+        top: 10%;
+    }
+
+    .box3 {
+        position: relative;
+        left: 70%;
+        top: 40%;
+        width: auto;
+    }
+
+    .t1-desc,
+    .t2-desc,
+    .t3-desc {
+        font-size: 0.5rem;
+        margin: 2px;
+    }
+
+    .info .left-text p {
+        font-size: 0.4rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .form input {
+        width: 85%;
+        margin: 0;
+    }
+
+    .form .btn {
+        width: 50%;
+        margin-left: 58%;
+    }
 }
