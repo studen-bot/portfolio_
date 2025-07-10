@@ -995,12 +995,18 @@ footer .footer-rights {
 }
 
 @media(max-width:480px) {
+    span i{
+        font-style:normal;
+
+    }
     .left-section {
         padding: 0;
     }
 
     .rightSection img {
         margin-top: 0;
+        margin-bottom:20px;
+        height:30vh;
     }
 
     .container {
@@ -1030,7 +1036,7 @@ footer .footer-rights {
         display:none;
     }
     .info .left-text {
-        height: 60vh;
+        height: 50vh;
     }
 
 }
