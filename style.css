@@ -821,7 +821,7 @@ footer .footer-rights {
         width: 100vw;
         left: 0;
         height: 50vh;
-        border: 2px solid rgb(2, 2, 57);
+        border: 2px solid (#030A13,#051024);
         padding: 40px 32px 60px 12px;
     }
 
