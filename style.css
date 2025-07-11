@@ -995,7 +995,7 @@ footer .footer-rights {
 }
 
 @media(max-width:480px) {
-    .first,.fifth,.fourth,.third{
+    .fifth,.fourth,.third{
         height:80vh;
     }
     span i{
