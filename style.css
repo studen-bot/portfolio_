@@ -995,9 +995,12 @@ footer .footer-rights {
 }
 
 @media(max-width:480px) {
+    .first,.fifth,.fourth,.third{
+        height:80vh;
+    }
     span i{
         font-style:normal;
-
+        font-size:1.8rem;
     }
     .left-section {
         padding: 0;
